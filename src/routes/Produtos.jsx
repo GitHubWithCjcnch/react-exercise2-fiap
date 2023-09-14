@@ -20,6 +20,7 @@ export default function Produtos() {
                 <th className={styles.tableHeader}>NOME</th>
                 <th className={styles.tableHeader}>PREÇO</th>
                 <th className={styles.tableHeader}>EDITAR / EXCLUIR</th>
+                <th className={styles.tableHeader}>ADICIONAR</th>
             </tr>
             </thead>
             <tbody>
