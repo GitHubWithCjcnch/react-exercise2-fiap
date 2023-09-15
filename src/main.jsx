@@ -4,7 +4,6 @@ import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import App from './App.jsx'
-import App from './App.jsx'
 import AdicionarProduto from './routes/AdicionarProduto.jsx';
 import EditarProdutos from './routes/EditarProdutos.jsx';
 import Erro404 from './routes/Erro404.jsx';
