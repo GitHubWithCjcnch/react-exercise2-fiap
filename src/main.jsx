@@ -2,7 +2,6 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 
-
 //BLOCO DE ROTAS
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import EditarProdutos from './routes/EditarProdutos.jsx';
