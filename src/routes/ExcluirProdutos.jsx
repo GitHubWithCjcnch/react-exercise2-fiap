@@ -1,6 +1,6 @@
 import { useNavigate, useParams } from "react-router-dom";
-
 import { ListaProdutos } from "../Components/ListaProdutos";
+import  styles from "../css/EditarExcluir.module.css";
 
 export default function ExcluirProdutos() {
   document.title = "Excluir Produtos";
@@ -28,15 +28,15 @@ export default function ExcluirProdutos() {
 
   return (
     <>
-      <div>
+      <div className={styles.container_excluir}>
         <h1>Excluir Produtos</h1>
-        <div>
+        <div className={styles.textbox}>
           <h2>Você tem certeza que deseja excluir esse produto?</h2>
           <p>Nome do Produto : {produto.nome}</p>
           <p>Preço do Produto : {produto.preco}</p>
           <div>
-            <button onClick={handleDelete}>EXCLUIR</button>
-            <button onClick={()=> navigate("/produtos")}>CANCELAR</button>
+            <button onClick={handleDelete} className={styles.btn}>EXCLUIR</button>
+            <button onClick={()=> navigate("/produtos")} className={styles.btn}>CANCELAR</button>
           </div>
         </div>
       </div>
