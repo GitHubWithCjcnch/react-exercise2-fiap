@@ -2,5 +2,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Isso centralizará verticalmente na tela inteira */
-  }
+    height: 100vh;
+}
