@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+main h1{
+  text-align: center;
+}
+
 .icon {
   transform: scale(2);
 }
@@ -24,6 +28,7 @@
 
 .containerNameProduct {
   font-family: 'Roboto Slab', serif;
+
   position: relative;
   display: flex;
   flex-direction: column;
