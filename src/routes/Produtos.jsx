@@ -1,10 +1,11 @@
-import { Link } from "react-router-dom"
-import { ListaProdutos } from "../Components/ListaProdutos"
-import  styles from "../css/Produtos.module.css";
 import { AiFillEdit as Editar } from "react-icons/ai";
-import { MdDeleteForever as Excluir } from "react-icons/md";
 import { AiOutlineShopping as Shopping } from "react-icons/ai"
 import { BsFillPlusCircleFill as AddIcon } from "react-icons/bs"
+import { MdDeleteForever as Excluir } from "react-icons/md";
+import { Link } from "react-router-dom"
+
+import { ListaProdutos } from "../Components/ListaProdutos"
+import  styles from "../css/Produtos.module.css";
 
 export default function Produtos() {
   document.title = "Lista de Produtos";
@@ -38,11 +39,9 @@ export default function Produtos() {
             </div>
           </div>
         ))}
-        <button
-          className={styles.buttonStyle}
-        >
-          <AddIcon />Adicionar Produto
-        </button>
+        <Link to="/adicionar/produto" className={styles.buttonStyle}>
+  <AddIcon /> Adicionar Produto
+</Link>
       </div>
     </main>
   )
