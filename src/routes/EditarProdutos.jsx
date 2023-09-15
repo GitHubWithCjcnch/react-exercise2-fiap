@@ -1,6 +1,7 @@
 import { useNavigate, useParams } from "react-router-dom";
 import { ListaProdutos } from "../Components/ListaProdutos";
 import { useState } from "react";
+import  styles from "../css/EditarExcluir.module.css";
 
 export default function EditarProdutos() {
 
@@ -48,10 +49,10 @@ export default function EditarProdutos() {
 
   return (
     <>
-      <div>
+      <div className={styles.container_editar}>
         <h1>Editar Produtos</h1>
         <div>
-          <form onSubmit={handleSubmit}>
+          <form onSubmit={handleSubmit} className={styles.content_editar}>
             <fieldset>
               <legend>Produto Selecionado</legend>
               <div>
@@ -66,7 +67,7 @@ export default function EditarProdutos() {
                 <input type="number" name="preco" id="idPreco" onChange={handleChangeProduto} value={produto.preco}/>
               </div>
               <div>
-                <button>EDITAR</button>
+                <button className={styles.button}>EDITAR</button>
               </div>
             </fieldset>
           </form>
