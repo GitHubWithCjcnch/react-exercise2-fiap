@@ -6,7 +6,6 @@ export default function EditarProdutos() {
 
   document.title = `Editar Produtos` ;
  
-
   //Recuperando o ID com o HOOK useParams()
   const {id} = useParams();
 
@@ -76,7 +75,5 @@ export default function EditarProdutos() {
         <p>Preço : {produto.preco}</p>
       </div>
     </>
-
-
   )
 }
