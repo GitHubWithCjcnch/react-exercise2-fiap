@@ -1,4 +1,3 @@
-import  styles from "./Produtos.module.css";
 import { AiFillEdit as Editar } from "react-icons/ai";
 import { AiOutlineShopping as Shopping } from "react-icons/ai"
 import { BsFillPlusCircleFill as AddIcon } from "react-icons/bs"
@@ -6,6 +5,7 @@ import { MdDeleteForever as Excluir } from "react-icons/md";
 import { Link } from "react-router-dom"
 
 import { ListaProdutos } from "../Components/ListaProdutos"
+import  styles from "../css/Produtos.module.css";
 
 export default function Produtos() {
   document.title = "Lista de Produtos";
