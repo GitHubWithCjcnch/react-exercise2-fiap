@@ -1,39 +1,83 @@
-.table{
-    border: 2px solid #ccc;
-    border-collapse: collapse;
-    margin: auto;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,200&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-    .tableHeader{
-        border: 2px solid #ccc;
-        background-color: #ffe4c4;
-        text-align: center;
-    }
-
-   td{
-        border: 2px solid #ccc;
-        text-align: left;
-
-        &:first-child{
-            text-align: center;
-        }
-        &:last-child{
-            text-align: center;
-        }
-    }
-
-    tr{
-        &:nth-child(even){
-            background-color: #f0f0f0;
-        }
-
-        &:hover{
-            background-color: #444949;
-            color: #fff;
-        }
-
-    }
-
+.icon {
+  transform: scale(2);
 }
 
+.mainDiv {
+  font-family: 'Roboto Slab', serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 5%;
+}
 
- 
+.productContainer {
+  font-family: 'Roboto Slab', serif;
+  position: relative;
+  display: flex;
+  width: 50vw;
+  padding: 1em 3em;
+  border-radius: 1em;
+  box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+.containerNameProduct {
+  font-family: 'Roboto Slab', serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 0.7em;
+}
+
+.lineBetween {
+  font-size: 3rem;
+  padding: 0 15px;
+  color: black;
+  margin: auto 0;
+}
+
+.detailsProduct {
+  font-family: 'Roboto Slab', serif;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+}
+
+.editExcludeContainer {
+  font-family: 'Roboto Slab', serif;
+  display: flex;
+  gap: 5%;
+}
+
+.buttonStyle {
+  text-align: center;
+  border-radius: 0.375rem;
+  border-style: solid;
+  border-width: 0.125rem;
+  color: #212121;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.125rem;
+  padding: 0.5rem 1rem;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transform: translateZ(0) scale(1);
+  transition: transform 0.2s;
+}
+
+.buttonStyle:not(:disabled):hover {
+  transform: scale(1.05);
+}
+
+.buttonStyle:not(:disabled):hover:active {
+  transform: scale(1.05) translateY(0.125rem);
+}
+
+.buttonStyle:focus {
+  outline: 0 solid transparent;
+}
