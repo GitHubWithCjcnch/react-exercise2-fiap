@@ -18,6 +18,7 @@ main h1{
 
 .productContainer {
   font-family: 'Roboto Slab', serif;
+  margin-top: 5vh;
   position: relative;
   display: flex;
   width: 50vw;
@@ -62,6 +63,7 @@ main h1{
   border-radius: 0.375rem;
   border-style: solid;
   border-width: 0.125rem;
+  margin-top: 5vh;
   color: #212121;
   cursor: pointer;
   display: inline-block;
