@@ -1,4 +1,5 @@
 import { useNavigate, useParams } from "react-router-dom";
+
 import { ListaProdutos } from "../Components/ListaProdutos";
 
 export default function ExcluirProdutos() {
@@ -35,7 +36,7 @@ export default function ExcluirProdutos() {
           <p>Preço do Produto : {produto.preco}</p>
           <div>
             <button onClick={handleDelete}>EXCLUIR</button>
-            <button onClick={()=> navigate("/produtos")}>CANCELAR</button>s
+            <button onClick={()=> navigate("/produtos")}>CANCELAR</button>
           </div>
         </div>
       </div>
